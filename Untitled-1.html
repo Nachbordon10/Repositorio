@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ratio Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: #b5962f;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            padding: 1em;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #b5962f;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #b5962f;
+            color: #000;
+        }
+
+        #services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 2em;
+        }
+
+        .service {
+            flex: 1 1 300px;
+            margin: 1em;
+            padding: 1em;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .service h3, .service p {
+            margin-bottom: 1em;
+        }
+
+        .contact-button {
+            display: inline-block;
+            background-color: #b5962f;
+            color: #000;
+            text-decoration: none;
+            padding: 15px 32px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transform: scale(1);
+            transition: background-color 0.5s, color 0.5s, transform 0.3s;
+        }
+
+        .contact-button:hover {
+            background-color: #000;
+            color: #b5962f;
+            transform: scale(1.05);
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 600px) {
+            .service {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <a href="#home">Inicio</a>
+      <a href="#about">Acerca de</a>
+      <a href="#services">Servicios</a>
+      <a href="#contact">Contacto</a>
+    </div>
+
+    <img src="logo.png" alt="Logo Ratio Solutions">
+    <h1>Bienvenido a Ratio Solutions</h1>
+    <p>Ofrecemos soluciones tecnológicas para su empresa.</p>
+
+    <div id="about">
+        <h2>Acerca de nosotros</h2>
+        <p>Ratio Solutions es una empresa líder en soluciones tecnológicas...</p>
+        <!-- Más información... -->
+    </div>
+
+    <div id="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="service">
+            <img src="service1.jpg" alt="Imagen del servicio 1">
+            <h3>Servicio 1</h3>
+            <p>Descripción del servicio 1.</p>
+            <!-- Puedes añadir más detalles o incluso un enlace para obtener más información... -->
+        </div>
+        <div class="service">
+            <img src="service2.jpg" alt="Imagen del servicio 2">
+            <h3>Servicio 2</h3>
+            <p>Descripción del servicio 2.</p>
+            <!-- Puedes añadir más detalles o incluso un enlace para obtener más información... -->
+        </div>
+        <!-- etc. -->
+    </div>
+
+    <a class="contact-button" href="#contact">Contacta con nosotros</a>
+
+    <footer>
+        <p>&copy; 2023 Ratio Solutions. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+
+</html>
+
+</html>
